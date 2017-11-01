@@ -1,1 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
+<Container version="2">
+  <Date>2017-10-09</Date>
+  <Beta>False</Beta>
+  <Category>Cloud:</Category>
+  <Name>Sync</Name>
+  <Project>https://www.resilio.com/</Project>
+  <Changes>
+[font size=3]2015.06.15[/font]
+- Initial Release (Sync version 2.0.124)
+  </Changes>
+  <Overview>
+    MariaDB is a fast, reliable, scalable, and easy to use open-source relational database system. MariaDB Server is intended for mission-critical, heavy-load production systems as well as for embedding into mass-deployed software.
+  </Overview>
+  <Description>
+    MariaDB is a fast, reliable, scalable, and easy to use open-source relational database system. MariaDB Server is intended for mission-critical, heavy-load production systems as well as for embedding into mass-deployed software.																				  
+  </Description>
+  <Registry>https://registry.hub.docker.com/r/bitnami/mariadb/</Registry>
+  <GitHub>https://github.com/bitnami/bitnami-docker-mariadb</GitHub>
+  <Repository>bitnami/bitnami-docker-mariadb</Repository>
+  <Support></Support>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+  	<Variable>
+      <Name>ALLOW_EMPTY_PASSWORD</Name>
+      <Value>yes</Value>
+    </Variable>
+    <Variable>
+      <Name>MARIADB_USER</Name>
+      <Value>bn_wordpress</Value>
+    </Variable>
+    <Variable>
+      <Name>MARIADB_DATABASE</Name>
+      <Value>bitnami_wordpress</Value>
+    </Variable>
+  </Environment>
+  <Networking>
+    <Mode>wordpress-tier</Mode>
+    <Publish>
+      <Port>
+        <HostPort>3306</HostPort>
+        <ContainerPort>3306</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+				
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/mariadb</HostDir>
+      <ContainerDir>/bitnami</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI></WebUI>
+				   
+  <Icon></Icon>
+
+  <Network Default="bridge">bridge</Network>
+
+  <Config Type="Variable" Name="Allow Empty Passwords" Target="yes" Default="8888" Mode="tcp" Display="always-hide" Required="true"
+       Description="This is Sync's Web UI port you can access via a web browser.">8888</Config>
+
+  <Config Type="Port" Name="TCP Data Transfer Port" Target="5555" Default="5555" Mode="tcp" Display="advanced-hide" Required="true"
+       Description="This is Sync's TCP port for data transfers.">5555</Config>
+
+  <Config Type="Port" Name="UDP Data Transfer Port" Target="3838" Default="3838" Mode="udp" Display="advanced-hide" Required="true"
+       Description="This is Sync's UDP port for data transfers.">3838</Config>
+
+  <Config Type="Path" Name="Config Storage Path" Target="/config" Default="/mnt/user/appdata/Sync" Mode="rw" Display="advanced-hide" Required="true"
+       Description="This is where Sync will store its databases and configuration.">/mnt/user/appdata/Sync</Config>
+</Container>

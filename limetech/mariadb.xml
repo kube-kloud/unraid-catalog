@@ -55,6 +55,7 @@
   </Data>
   <WebUI></WebUI>
 				   
+				   
   <Icon></Icon>
 
   <Network Default="bridge">bridge</Network>

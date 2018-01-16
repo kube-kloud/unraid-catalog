@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>False</Beta>
+  <Category>MediaServer:Other</Category>
+  <Name>Factorio</Name>
+  <Description>
+   Factorio is a game in which you build and maintain factories. You will be mining resources, researching technologies, building infrastructure, automating production and fighting enemies. Use your imagination to design your factory, combine simple elements into ingenious structures, apply management skills to keep it working and finally protect it from the creatures who don't really like you.
+  </Description>
+  <Registry>https://hub.docker.com/r/carloe/docker-factorio/</Registry>
+  <GitHub>https://github.com/carloe/docker-factorio</GitHub>
+  <Repository>carloe/docker-factorios</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>34197</HostPort>
+        <ContainerPort>34197</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/factorio/</HostDir>
+      <ContainerDir>/opt/factorio/saves</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Banner>http://i.imgur.com/P6RRtHH.png</Banner>
+  <Icon>http://i.imgur.com/P6RRtHH.png</Icon>
+</Container>

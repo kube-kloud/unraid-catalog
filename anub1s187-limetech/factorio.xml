@@ -23,8 +23,13 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/factorio/</HostDir>
+      <HostDir>/mnt/user/gaming/factorio/saves</HostDir>
       <ContainerDir>/opt/factorio/saves</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/gaming/factorio/mods</HostDir>
+      <ContainerDir>/opt/factorio/mods</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>

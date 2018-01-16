@@ -28,6 +28,6 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <Banner>http://i.imgur.com/P6RRtHH.png</Banner>
-  <Icon>http://i.imgur.com/P6RRtHH.png</Icon>
+  <Banner>https://www.factorio.com/static/img/factorio-logo.png</Banner>
+  <Icon>https://github.com/anub1s187/docker-templates/blob/master/anub1s187-limetech/logo.PNG</Icon>
 </Container>

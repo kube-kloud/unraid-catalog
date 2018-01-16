@@ -8,7 +8,7 @@
   </Description>
   <Registry>https://hub.docker.com/r/carloe/docker-factorio/</Registry>
   <GitHub>https://github.com/carloe/docker-factorio</GitHub>
-  <Repository>carloe/docker-factorios</Repository>
+  <Repository>carloe/docker-factorio</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Networking>

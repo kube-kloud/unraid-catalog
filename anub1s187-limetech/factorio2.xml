@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
   <Beta>False</Beta>
@@ -11,6 +12,20 @@
   <Repository>carloe/docker-factorio</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
+  <Environment>
+  	<Variable>
+      <Name>FACTORIO_AUTOSAVE_INTERVAL</Name>
+      <Value>yes</Value>
+    </Variable>
+    <Variable>
+      <Name>MARIADB_USER</Name>
+      <Value>bn_wordpress</Value>
+    </Variable>
+    <Variable>
+      <Name>MARIADB_DATABASE</Name>
+      <Value>exe1Hou</Value>
+    </Variable>
+  </Environment>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>

@@ -6,25 +6,11 @@
   <Description>
    Factorio is a game in which you build and maintain factories. You will be mining resources, researching technologies, building infrastructure, automating production and fighting enemies. Use your imagination to design your factory, combine simple elements into ingenious structures, apply management skills to keep it working and finally protect it from the creatures who don't really like you.
   </Description>
-  <Registry>https://hub.docker.com/r/gameservers/factorio/</Registry>
-  <GitHub>https://github.com/GameServers/Factorio</GitHub>
-  <Repository>gameservers/factorio</Repository>
+  <Registry>https://hub.docker.com/r/psmith282/factorio/</Registry>
+  <GitHub>https://github.com/anub1s187/factorio</GitHub>
+  <Repository>psmith282/factorio</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
-  <Environment>
-  	<Variable>
-      <Name>FACTORIO_AUTOSAVE_INTERVAL</Name>
-      <Value>yes</Value>
-    </Variable>
-    <Variable>
-      <Name>FACTORIO_SERVER_GAME_PASSWORD</Name>
-      <Value>exe1Hou</Value>
-    </Variable>
-    <Variable>
-      <Name>FACTORIO_SERVER_VERIFY_IDENTITY</Name>
-      <Value>Anub1s187_server</Value>
-    </Variable>
-  </Environment>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>

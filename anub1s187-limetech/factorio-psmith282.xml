@@ -32,6 +32,16 @@
       <ContainerDir>/opt/factorio/mods</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
+    <Volume>
+      <HostDir>/mnt/user/gaming/factorio/config</HostDir>
+      <ContainerDir>/opt/factorio/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/gaming/factorio/data</HostDir>
+      <ContainerDir>/opt/factorio/data</ContainerDir>
+      <Mode>rw</Mode>
+</Volume>
   </Data>
   <Banner>https://www.factorio.com/static/img/factorio-logo.png</Banner>
   <Icon>https://imgur.com/rUUprbZ</Icon>

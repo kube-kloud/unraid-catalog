@@ -2,7 +2,7 @@
 <Container>
   <Beta>False</Beta>
   <Category>MediaServer:Other</Category>
-  <Name>FactorioServer</Name>
+  <Name>RancherServer</Name>
   <Description>
    
   </Description>

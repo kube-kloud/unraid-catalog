@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>False</Beta>
+  <Category>MediaServer:Other</Category>
+  <Name>RancherAgent</Name>
+  <Description>
+   
+  </Description>
+  <Registry>https://hub.docker.com/r/rancher/agent/</Registry>
+  <GitHub>https://github.com/rancher/rancher.git</GitHub>
+  <Repository>rancher/agent</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/rancher-agent/</HostDir>
+      <ContainerDir>/var/lib/rancher</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/rancher-agent/docker.sock</HostDir>
+      <ContainerDir>/var/run/docker.sock</ContainerDir>
+      <Mode>rw</Mode>
+</Volume>
+
+  </Data>
+  <Banner>https://rancher.com/docs/img/rancher-logo-nopadding.svg</Banner>
+  <Icon>https://rancher.com/docs/img/rancher-logo-nopadding.svg</Icon>
+</Container>

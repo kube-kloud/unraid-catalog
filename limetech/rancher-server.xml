@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>False</Beta>
+  <Category>MediaServer:Other</Category>
+  <Name>RancherServer</Name>
+  <Description>
+   
+  </Description>
+  <Registry>https://hub.docker.com/r/rancher/server/</Registry>
+  <GitHub>https://github.com/rancher/rancher.git</GitHub>
+  <Repository>rancher/server</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8086</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+
+  </Data>
+  <Banner>https://rancher.com/docs/img/rancher-logo-nopadding.svg</Banner>
+  <Icon>https://rancher.com/docs/img/rancher-logo-nopadding.svg</Icon>
+</Container>

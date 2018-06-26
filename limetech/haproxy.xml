@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>False</Beta>
+  <Category>MediaServer:Other</Category>
+  <Name>HAProxy</Name>
+  <Description>
+   Proxy Load Balancer
+  </Description>
+  <Registry>https://hub.docker.com/_/haproxy/</Registry>
+  <GitHub>https://github.com/docker-library/haproxy/</GitHub>
+  <Repository>_/haproxy</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>9080</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/haproxy</HostDir>
+      <ContainerDir>/usr/local/etc/haproxy/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Banner></Banner>
+  <Icon></Icon>
+</Container>

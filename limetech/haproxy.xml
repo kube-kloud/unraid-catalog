@@ -8,7 +8,7 @@
   </Description>
   <Registry>https://hub.docker.com/_/haproxy/</Registry>
   <GitHub>https://github.com/docker-library/haproxy/</GitHub>
-  <Repository>_/haproxy</Repository>
+  <Repository>haproxy</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Networking>

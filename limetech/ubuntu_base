@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>False</Beta>
+  <Category>MediaServer:Other</Category>
+  <Name>Ubuntu_Base</Name>
+  <Description>
+     Base ubuntu image for testing
+  </Description>
+  <Registry>https://hub.docker.com/r/psmith282/ubuntu_base/</Registry>
+  <GitHub>https://github.com/anub1s187/base</GitHub>
+  <Repository>psmith282/ubuntu_base</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>22</HostPort>
+        <ContainerPort>22</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+    </Volume>
+  </Data>
+  <Banner></Banner>
+  <Icon></Icon>
+</Container>

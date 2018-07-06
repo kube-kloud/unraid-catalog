@@ -15,7 +15,7 @@
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>22</HostPort>
+        <HostPort>2222</HostPort>
         <ContainerPort>22</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
